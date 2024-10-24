@@ -15,6 +15,11 @@ export default function Home() {
           >
             Figma Style Toolbar
           </Link>
+          <Link
+            href="/animatednumbercounter/"
+          >
+            Animated Numbers Counter
+          </Link>
       </div>
     </div>
   );
