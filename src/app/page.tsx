@@ -20,6 +20,11 @@ export default function Home() {
           >
             Animated Numbers Counter
           </Link>
+          <Link
+            href="/glassmaterialnavbar/"
+          >
+            Glass Material Navbar
+          </Link>
       </div>
     </div>
   );
