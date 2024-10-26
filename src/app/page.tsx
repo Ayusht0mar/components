@@ -25,6 +25,11 @@ export default function Home() {
           >
             Glass Material Navbar
           </Link>
+          <Link
+            href="/animatedgrid/"
+          >
+            Animated Grid
+          </Link>
       </div>
     </div>
   );
