@@ -1,4 +1,8 @@
+"use client"
+import { animate, useMotionValue, motion } from "framer-motion";
 import Image from "next/image";
+import { useEffect } from "react";
+import useMeasure from "react-use-measure";
 
 const InfiniteScrollingCarousel = () => {
 
@@ -13,13 +17,32 @@ const InfiniteScrollingCarousel = () => {
         "/image-8.jpg",
     ]
 
+    let [ ref, {width}] = useMeasure()
+
+    const xTranslation = useMotionValue(0);
+
+    useEffect(() => {
+        let controls;
+        let finalPosition = -width / 2 - 4;
+
+        controls = animate(xTranslation, [0, finalPosition], {
+            ease: "linear",
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "loop",
+            repeatDelay: 0,
+        });
+        
+        return controls.stop;
+    }, [xTranslation, width]);
+
     return ( 
-        <div className="py-8">
-            <div className="absolute flex gap-4 ">
-                {[...logos].map((item, idx) => (
+        <div className="py-8 overflow-clip">
+            <motion.div className="flex gap-2 inset-0" ref={ref} style={{x: xTranslation}}>
+                {[...logos, ...logos].map((item, idx) => (
                     <Card image={item} key={idx}/>
                 ))}
-            </div>
+            </motion.div>
         </div>
      );
 }
@@ -27,12 +50,11 @@ const InfiniteScrollingCarousel = () => {
 const Card = ({image} : {
     image : string;
 }) => {
-    return <div className="relative">
+    return <div className="relative overflow-hidden h-[160px] min-w-[160px] bg-slate-400 rounded-lg flex justify-center items-center">
         <Image
             src={image}
             alt={image}
-            height={1000}
-            width={1000}
+            fill
         />
     </div>
 }
