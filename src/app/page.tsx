@@ -30,6 +30,11 @@ export default function Home() {
           >
             Animated Grid
           </Link>
+          <Link
+            href="/bottomtray/"
+          >
+            Bottom Tray
+          </Link>
       </div>
     </div>
   );
