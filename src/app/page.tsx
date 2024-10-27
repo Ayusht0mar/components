@@ -35,6 +35,11 @@ export default function Home() {
           >
             Bottom Tray
           </Link>
+          <Link
+            href="/rotatingbordergradient/"
+          >
+            Rotating Border Gradient
+          </Link>
       </div>
     </div>
   );
