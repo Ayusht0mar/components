@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useTime, useTransform } from "framer-motion";
 
-const RotatingBorderGradient = () => {
+const RotatingBorderGradientButton = () => {
     const time = useTime();
 
     const rotate = useTransform(time, [0,3000], [0, 360], {
@@ -30,4 +30,4 @@ const RotatingBorderGradient = () => {
      );
 }
  
-export default RotatingBorderGradient;
+export default RotatingBorderGradientButton;
