@@ -36,9 +36,14 @@ export default function Home() {
             Bottom Tray
           </Link>
           <Link
-            href="/rotatingbordergradient/"
+            href="/rotatingbordergradientbutton/"
           >
-            Rotating Border Gradient
+            Rotating Border Gradient Button
+          </Link>
+          <Link
+            href="/glowingbordergradientbutton/"
+          >
+            Glowing Border Gradient Button
           </Link>
       </div>
     </div>
