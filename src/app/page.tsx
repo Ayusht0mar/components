@@ -45,6 +45,16 @@ export default function Home() {
           >
             Glowing Border Gradient Button
           </Link>
+          <Link
+            href="/scrollingtable/"
+          >
+            Scrolling Table
+          </Link>
+          <Link
+            href="/buttons/"
+          >
+            Buttons
+          </Link>
       </div>
     </div>
   );
