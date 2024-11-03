@@ -55,6 +55,11 @@ export default function Home() {
           >
             Buttons
           </Link>
+          <Link
+            href="/floatingcard/"
+          >
+            Floating Card 
+          </Link>
       </div>
     </div>
   );
