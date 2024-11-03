@@ -14,9 +14,9 @@ const Buttons = () => {
                         Get Premium
                     </button>
                 </div>
-                <div className="bg-black h-80 flex justify-center">
-                    <button className="text-white">
-                        Hello
+                <div className="bg-[#F5F5F7] h-80 flex justify-center items-center">
+                    <button className="text-[#0073e6] border border-[#0073e6] px-4 py-2 leading-none hover:bg-[#0073e6] hover:text-white rounded-md">
+                        Hover Button
                     </button>
                 </div>
                 <div className="bg-black h-80 flex justify-center">
