@@ -9,9 +9,9 @@ const Buttons = () => {
                         Join Waitlist
                     </button>
                 </div>
-                <div className="bg-black h-80 flex justify-center">
-                    <button className="text-white">
-                        Join Waitlist
+                <div className="bg-black h-80 flex justify-center items-center">
+                    <button className="border border-[#1BFD9C] py-2 px-4 rounded-lg font-medium text-[#1BFD9C] text-sm bg-[#0a0a0a] shadow-[0px_0px_12px_#1BFD9C]">
+                        Get Premium
                     </button>
                 </div>
                 <div className="bg-black h-80 flex justify-center">
