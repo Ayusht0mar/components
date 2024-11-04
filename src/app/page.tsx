@@ -60,6 +60,11 @@ export default function Home() {
           >
             Floating Card 
           </Link>
+          <Link
+            href="/navbar/"
+          >
+            Navbar 
+          </Link>
       </div>
     </div>
   );
