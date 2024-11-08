@@ -65,6 +65,11 @@ export default function Home() {
           >
             Navbar 
           </Link>
+          <Link
+            href="/bentogrid1/"
+          >
+            Bento Grid 1 
+          </Link>
       </div>
     </div>
   );
