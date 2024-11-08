@@ -80,6 +80,11 @@ export default function Home() {
           >
             Bento Grid 3
           </Link>
+          <Link
+            href="/bentogrid4/"
+          >
+            Bento Grid 4
+          </Link>
       </div>
     </div>
   );
