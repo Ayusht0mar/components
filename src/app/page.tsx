@@ -85,6 +85,11 @@ export default function Home() {
           >
             Bento Grid 4
           </Link>
+          <Link
+            href="/cardhover/"
+          >
+            Card Hover
+          </Link>
       </div>
     </div>
   );
