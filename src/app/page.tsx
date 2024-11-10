@@ -95,6 +95,11 @@ export default function Home() {
           >
             Typewriter Text
           </Link>
+          <Link
+            href="/zoomparallax/"
+          >
+            Zoom Parallax
+          </Link>
       </div>
     </div>
   );
