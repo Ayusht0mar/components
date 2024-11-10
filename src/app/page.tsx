@@ -100,6 +100,11 @@ export default function Home() {
           >
             Zoom Parallax
           </Link>
+          <Link
+            href="/hoverbutton/"
+          >
+            Hover Button
+          </Link>
       </div>
     </div>
   );
