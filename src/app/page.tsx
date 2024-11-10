@@ -90,6 +90,11 @@ export default function Home() {
           >
             Card Hover
           </Link>
+          <Link
+            href="/typewritertext/"
+          >
+            Typewriter Text
+          </Link>
       </div>
     </div>
   );
