@@ -110,7 +110,11 @@ export default function Home() {
           >
             Grid Bg
           </Link>
-          
+          <Link
+            href="/swipecards/"
+          >
+            Swipe Cards
+          </Link>
       </div>
     </div>
   );
