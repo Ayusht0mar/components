@@ -105,6 +105,12 @@ export default function Home() {
           >
             Hover Button
           </Link>
+          <Link
+            href="/gridbg/"
+          >
+            Grid Bg
+          </Link>
+          
       </div>
     </div>
   );
