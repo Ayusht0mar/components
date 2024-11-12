@@ -120,6 +120,21 @@ export default function Home() {
           >
             Navbar 2
           </Link>
+          <Link
+            href="/navbar3/"
+          >
+            Navbar 3
+          </Link>
+          <Link
+            href="/navbar4/"
+          >
+            Navbar 4
+          </Link>
+          <Link
+            href="/accordion/"
+          >
+            Accordion
+          </Link>
       </div>
     </div>
   );
