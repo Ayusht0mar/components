@@ -115,6 +115,11 @@ export default function Home() {
           >
             Swipe Cards
           </Link>
+          <Link
+            href="/navbar2/"
+          >
+            Navbar 2
+          </Link>
       </div>
     </div>
   );
