@@ -79,5 +79,5 @@ type CursorProps = {
 const Cursor = ({position} : CursorProps) => {
     return <motion.li 
                 animate= {position}
-                className="absolute z-0 h-8 w-36 rounded-full bg-black md:h-16" />;
+                className="absolute z-0 h-8 w-36 rounded-full bg-black md:h-12 opacity-0" />;
 }
