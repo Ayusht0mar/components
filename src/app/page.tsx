@@ -140,6 +140,11 @@ export default function Home() {
           >
             Compare Images
           </Link>
+          <Link
+            href="/pricingsection/"
+          >
+            Pricing Section
+          </Link>
       </div>
     </div>
   );
