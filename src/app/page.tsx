@@ -135,6 +135,11 @@ export default function Home() {
           >
             Accordion
           </Link>
+          <Link
+            href="/compareimages/"
+          >
+            Compare Images
+          </Link>
       </div>
     </div>
   );
