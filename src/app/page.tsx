@@ -145,6 +145,11 @@ export default function Home() {
           >
             Pricing Section
           </Link>
+          <Link
+            href="/sortablelist/"
+          >
+            Sortable list 
+          </Link>
       </div>
     </div>
   );
