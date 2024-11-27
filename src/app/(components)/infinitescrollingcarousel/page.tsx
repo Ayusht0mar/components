@@ -39,7 +39,7 @@ const InfiniteScrollingCarousel = () => {
     return ( 
         <div className="py-8 overflow-clip">
             <motion.div className="flex gap-2 inset-0" ref={ref} style={{x: xTranslation}}>
-                {[...logos, ...logos].map((item, idx) => (
+                {[...logos, ...logos, ...logos].map((item, idx) => (
                     <Card image={item} key={idx}/>
                 ))}
             </motion.div>
