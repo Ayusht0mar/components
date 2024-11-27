@@ -39,7 +39,7 @@ const Navbar = () => {
     const pathname = usePathname()
 
     return (
-        <div className="bg-whiteadmin fixed inset-x-0 bottom-0 z-20 mx-auto mb-4 flex px-6">
+        <div className="bg-white admin fixed inset-x-0 bottom-0 z-20 mx-auto mb-4 flex px-6">
             <div className=" relative p-1 mx-auto flex h-full items-center overflow-y-scroll rounded-[12px] shadow-[rgba(142,140,152,0.2)_0px_0px_30px,rgba(219,216,224,0.2)_0px_0px_0px_1px] sm:overflow-y-visible">
             {tabs.map((tab) => (
                     <button 
