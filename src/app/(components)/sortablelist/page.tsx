@@ -1,8 +1,8 @@
 "use client"
 
-import { useState } from "react";
+import { MutableRefObject, useRef, useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Reorder } from "framer-motion";
+import { Reorder, useDragControls } from "framer-motion";
 import { taskData } from "@/db/tasks";
 
 type List = {
@@ -36,6 +36,7 @@ const listData: List[] = [
 
 
 const SortableList = () => {
+    const container = useRef(null);
 
     const [tasks, setTasks] = useState(listData);
 
@@ -52,12 +53,13 @@ const SortableList = () => {
         <div className="flex items-center justify-center min-h-screen p-8">
         <div className="flex flex-col gap-8 w-2/5 min-w-72 border-neutral-100 border-2 rounded-xl p-8 shadow-xl">
           <h1 className="text-4xl font-semibold">Tasks</h1>
-          <Reorder.Group className="space-y-1" values={tasks} onReorder={setTasks}>
+          <Reorder.Group className="space-y-1" values={tasks} onReorder={setTasks} ref={container}>
             {tasks.map((t) => (
               <TaskItem
                 task={t}
                 key={t.id}
                 toggleTaskComplete={() => toggleTask(t.id)}
+                container={container}
               />
             ))}
           </Reorder.Group>
@@ -71,18 +73,29 @@ const SortableList = () => {
 const TaskItem = ({
   task,
   toggleTaskComplete,
+  container
 }: {
   task: List;
+  container: MutableRefObject<null>
   toggleTaskComplete: () => void;
 }) => {
+
+    const controls = useDragControls()
   return (
-    <Reorder.Item value={task} className="flex items-center gap-2 px-3 py-2 bg-white">
+    <Reorder.Item 
+        value={task} 
+        className="flex items-center gap-2 px-3 py-2 bg-white"
+        dragListener={false}
+        dragControls={controls}
+        dragConstraints={container}
+        dragElastic={0.1}
+        >
       <Checkbox
         id={`task-${task.id}`}
         checked={task.completed}
         onCheckedChange={toggleTaskComplete}
       />
-      <div className="flex-1">
+      <div className="flex-1" onPointerDown={(e) => controls.start(e)}>
         <label
           htmlFor={`task-${task.id}`}
           className={`font-normal select-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 ${
