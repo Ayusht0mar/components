@@ -84,11 +84,15 @@ const TaskItem = ({
   return (
     <Reorder.Item 
         value={task} 
-        className="flex items-center gap-2 px-3 py-2 bg-white"
+        className="flex items-center gap-2 px-3 py-2 bg-white border rounded"
         dragListener={false}
         dragControls={controls}
         dragConstraints={container}
         dragElastic={0.1}
+        whileDrag={{               
+          backgroundColor: "#000",
+          color:"#fff"
+        }}
         >
       <Checkbox
         id={`task-${task.id}`}
