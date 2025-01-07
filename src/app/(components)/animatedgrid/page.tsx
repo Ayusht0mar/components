@@ -16,7 +16,7 @@ const AnimatedGrid = () => {
 
   return (
     <div className="w-[900px] mx-auto">
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 grid-container">
         {imgs.map((img, index) => (
           <motion.div
             key={img.imgSrc}
@@ -29,7 +29,6 @@ const AnimatedGrid = () => {
                 ? "col-span-2"
                 : "col-span-1"
             }`}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             <Image src={img.imgSrc} alt="" fill className="object-cover" />
           </motion.div>
