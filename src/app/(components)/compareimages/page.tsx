@@ -13,11 +13,11 @@ const CompareImages = (
     {containerClassName}: CompareImagesProps
 ) => {
     return ( 
-        <div className="w-[800px] h-96">
+        <div className="h-96 aspect-video">
             <ResizablePrimitive.PanelGroup direction="horizontal" className="w-96 mx-auto">
                 <ResizablePrimitive.Panel className="bg-blue-400 overflow-hidden relative" defaultSize={50}>
                         <Image
-                            src="/agency.webp"
+                            src="/airbnb-cover.png"
                             alt="Image"
                             fill
                             style={{objectFit: "cover", objectPosition: "left"}}
@@ -31,7 +31,7 @@ const CompareImages = (
                 </ResizablePrimitive.PanelResizeHandle>
                 <ResizablePrimitive.Panel className="bg-black overflow-hidden relative" defaultSize={50}>
                 <Image
-                        src="/candy.webp"
+                        src="/miro-cover.png"
                         alt="Image"
                         fill
                         style={{objectFit: "cover", objectPosition: "right"}}	
