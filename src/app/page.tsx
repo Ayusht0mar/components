@@ -150,6 +150,12 @@ export default function Home() {
           >
             Sortable list 
           </Link>
+          <Link
+            href="/footer-001/"
+          >
+            Footer-001 
+          </Link>
+
       </div>
     </div>
   );
