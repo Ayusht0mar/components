@@ -17,17 +17,17 @@ const InfiniteScrollingCarousel = () => {
         "/image-8.jpg",
     ]
 
-    let [ ref, {width}] = useMeasure()
+    let [ ref, {width}] = useMeasure();
 
     const xTranslation = useMotionValue(0);
 
     useEffect(() => {
         let controls;
-        let finalPosition = -width / 2 - 4;
+        let finalPosition = -width /2-8;
 
         controls = animate(xTranslation, [0, finalPosition], {
             ease: "linear",
-            duration: 2,
+            duration: 10,
             repeat: Infinity,
             repeatType: "loop",
             repeatDelay: 0,
@@ -37,8 +37,8 @@ const InfiniteScrollingCarousel = () => {
     }, [xTranslation, width]);
 
     return ( 
-        <div className="py-8 overflow-clip">
-            <motion.div className="flex gap-2 inset-0" ref={ref} style={{x: xTranslation}}>
+        <div className="py-8">
+            <motion.div className="absolute flex gap-4 left-0" ref={ref} style={{x: xTranslation}}>
                 {[...logos, ...logos, ...logos].map((item, idx) => (
                     <Card image={item} key={idx}/>
                 ))}
