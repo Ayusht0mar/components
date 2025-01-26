@@ -23,7 +23,7 @@ const InfiniteScrollingCarousel = () => {
 
     useEffect(() => {
         let controls;
-        let finalPosition = -width /2-8;
+        let finalPosition = -width/2 - 8;
 
         controls = animate(xTranslation, [0, finalPosition], {
             ease: "linear",
@@ -37,9 +37,9 @@ const InfiniteScrollingCarousel = () => {
     }, [xTranslation, width]);
 
     return ( 
-        <div className="py-8">
+        <div className="py-8 w-screen overflow-hidden">
             <motion.div className="absolute flex gap-4 left-0" ref={ref} style={{x: xTranslation}}>
-                {[...logos, ...logos, ...logos].map((item, idx) => (
+                {[...logos, ...logos].map((item, idx) => (
                     <Card image={item} key={idx}/>
                 ))}
             </motion.div>
