@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({image}) => {
     return ( 
-        <motion.div className="relative overflow-hidden h-[200px] min-w-[200px] bg-slate-400 rounded-xl flex justify-center items-center">
+        <motion.div className="relative overflow-hidden size-12 rounded-xl flex justify-center items-center">
             <Image
                 src={image}
                 alt={image}
