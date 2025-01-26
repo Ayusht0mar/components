@@ -5,7 +5,7 @@ import Team from "./team";
 
 const Footer = () => {
     return ( 
-        <div className="bg-[#f1f0ee]">
+        <div className="bg-[#f1f0ee] mt-32">
             <div className="mx-auto w-[84vw] py-10 flex max-w-screen-2xl justify-between">
                 <div className="flex flex-col gap-8">
                     <Image
