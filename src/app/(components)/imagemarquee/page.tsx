@@ -2,7 +2,7 @@ import ImageMarquee from "@/components/ImageMarquee/ImageMarquee";
 
 const ImageMarqueePage = () => {
     return ( 
-        <div>
+        <div className="bg-black">
             <ImageMarquee/>
             
         </div>
