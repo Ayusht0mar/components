@@ -1,5 +1,5 @@
 "use client"
-import { Dispatch, ReactElement, SetStateAction, useRef, useState } from "react";
+import { Dispatch, SetStateAction, useRef, useState } from "react";
 import {motion} from "framer-motion"
 
 const Navbar = () => {
@@ -8,7 +8,6 @@ const Navbar = () => {
         width: 0,
         opacity: 0,
     })
-
 
     return ( 
         <div className="grid h-screen place-content-center bg-neutral-100">
