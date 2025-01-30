@@ -155,6 +155,11 @@ export default function Home() {
           >
             Footer-001 
           </Link>
+          <Link
+            href="/doplo/"
+          >
+            Doplo
+          </Link>
 
       </div>
     </div>
